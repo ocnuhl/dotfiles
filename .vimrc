@@ -36,6 +36,7 @@ set guioptions-=m
 set guioptions-=T
 set shiftwidth=4
 set tabstop=4
+set scrolloff=0
 set fileencodings=ucs-bom,utf-8,gbk,big5,gb18030,latin1
 
 set background=dark
@@ -48,7 +49,7 @@ let maplocalleader = "\<Space>"
 let g:ctrlp_by_filename = 1
 let g:EasyMotion_smartcase = 1
 let g:mwIgnoreCase = 0
-let g:ycm_confirm_extra_conf = 0
+let g:ycm_always_populate_location_list = 1
 let g:ycm_key_invoke_completion = '<C-N>'
 let g:ycm_key_list_stop_completion = ['<Enter>']
 let tern_map_keys = 1
