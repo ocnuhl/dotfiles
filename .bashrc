@@ -14,8 +14,8 @@ TERM="xterm-256color"
 # User specific aliases and functions
 alias grep='grep --color=auto'
 alias ls='ls --color'
-alias la='ls -a'
-alias ll='ls -l'
+alias la='ls -A'
+alias ll='ls -lh'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'

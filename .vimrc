@@ -1,32 +1,23 @@
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'morhetz/gruvbox'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'inkarkat/vim-ingo-library'
-Plugin 'inkarkat/vim-mark'
-Plugin 'udalov/kotlin-vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'ternjs/tern_for_vim'
-Plugin 'valloric/youcompleteme'
+Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-commentary'
+Plug 'inkarkat/vim-ingo-library'
+Plug 'inkarkat/vim-mark'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'ycm-core/YouCompleteMe'
 
-call vundle#end()
+call plug#end()
 
 set cursorline
-set expandtab
 set hidden
 set hlsearch
 set ignorecase
-set smartcase
 set incsearch
 set noswapfile
 set number
@@ -41,8 +32,6 @@ set fileencodings=ucs-bom,utf-8,gbk,big5,gb18030,latin1
 
 set background=dark
 colo gruvbox
-filetype plugin indent on
-
 
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
@@ -52,16 +41,13 @@ let g:mwIgnoreCase = 0
 let g:ycm_always_populate_location_list = 1
 let g:ycm_key_invoke_completion = '<C-N>'
 let g:ycm_key_list_stop_completion = ['<Enter>']
-let tern_map_keys = 1
 
 nn <C-H> <C-W>h
 nn <C-L> <C-W>l
 nn <C-K> <C-W>k
 nn <C-J> <C-W>j
 nn <silent> <C-N> :nohlsearch<CR>
-nn <silent> <F3> :lv "<C-R>/" %<CR>:lw<CR>
 nn <silent> <F8> :TagbarOpenAutoClose<CR>
-nn <silent> <leader>gs :Gstatus<CR>
 nn <silent> <leader>gt :YcmCompleter GoTo<CR>
 nn <silent> <leader>gf :NERDTreeFind<CR>
 nn <Leader>w :update<CR>
