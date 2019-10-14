@@ -2,15 +2,14 @@ call plug#begin()
 
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-commentary'
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
@@ -41,6 +40,8 @@ let g:mwIgnoreCase = 0
 let g:ycm_always_populate_location_list = 1
 let g:ycm_key_invoke_completion = '<C-N>'
 let g:ycm_key_list_stop_completion = ['<Enter>']
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
 
 nn <C-H> <C-W>h
 nn <C-L> <C-W>l
@@ -50,6 +51,8 @@ nn <silent> <C-N> :nohlsearch<CR>
 nn <silent> <F8> :TagbarOpenAutoClose<CR>
 nn <silent> <leader>gt :YcmCompleter GoTo<CR>
 nn <silent> <leader>gf :NERDTreeFind<CR>
+nn <silent> <leader>o :CtrlPMRUFiles<CR>
+nn <silent> <leader>b :CtrlPBuffer<CR>
 nn <Leader>w :update<CR>
 nn <Leader>q :quit<CR>
 
