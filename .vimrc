@@ -1,4 +1,4 @@
-call plug#begin()
+silent! call plug#begin()
 
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
@@ -27,6 +27,7 @@ set guioptions-=T
 set shiftwidth=4
 set tabstop=4
 set scrolloff=0
+set mouse=a
 set fileencodings=ucs-bom,utf-8,gbk,big5,gb18030,latin1
 
 set background=dark
@@ -35,6 +36,7 @@ colo gruvbox
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
 let g:ctrlp_by_filename = 1
+let g:ctrlp_custom_ignore = '/build$'
 let g:EasyMotion_smartcase = 1
 let g:mwIgnoreCase = 0
 let g:ycm_always_populate_location_list = 1
