@@ -52,6 +52,8 @@ nn <Leader>w :update<CR>
 nn <Leader>q :quit<CR>
 
 vn p pgvy
+vn < <gv
+vn > >gv
 
 inoremap jj <Esc>
 
