@@ -1,12 +1,6 @@
-PATH="/usr/local/bin:/bin"
 PS1="\[\e[1;32m\][\u:\w]\$\[\e[m\] "
 HISTCONTROL=ignoreboth:erasedups
 export VISUAL=vim
-
-if [ -z "$HOSTIP" ]; then
-	export HOSTIP=$(grep nameserver /etc/resolv.conf | cut -d ' ' -f 2)
-	export DISPLAY=$HOSTIP:0
-fi
 
 alias ls="ls --color=auto"
 alias la="ls -A"
@@ -20,6 +14,7 @@ alias .....="cd ../../../.."
 alias del="trash"
 alias df="df -h"
 alias du="du -sh"
+alias envg="env |grep -i"
 alias free="free -h"
 alias grep="grep --color=auto"
 alias psg="ps -ef |grep -i"
