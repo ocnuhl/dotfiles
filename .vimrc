@@ -21,7 +21,7 @@ set incsearch
 set noswapfile
 set number
 set termguicolors
-set clipboard^=unnamedplus
+set clipboard^=unnamedplus,unnamed
 set cscopetagorder=1
 set guioptions-=m
 set guioptions-=T
