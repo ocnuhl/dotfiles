@@ -66,12 +66,8 @@
     "**/build": true
   },
   "files.watcherExclude": {
-    "**/build": true
+    "**/build/**": true
   },
-  "search.exclude": {
-    "**/build": true
-  },
-  "editor.fontFamily": "Source Code Pro",
   "extensions.ignoreRecommendations": true,
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.quickOpen"
