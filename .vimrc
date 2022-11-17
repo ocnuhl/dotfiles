@@ -12,21 +12,23 @@ Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
+set autoindent
+set clipboard^=unnamedplus,unnamed
 set cursorline
+set expandtab
+set fileencodings=ucs-bom,utf-8,gbk,big5,gb18030,latin1
+set guioptions-=m
+set guioptions-=T
 set hidden
 set hlsearch
 set ignorecase
 set incsearch
+set mouse=a
 set noswapfile
-set termguicolors
-set clipboard^=unnamedplus,unnamed
-set guioptions-=m
-set guioptions-=T
+set scrolloff=0
 set shiftwidth=4
 set tabstop=4
-set scrolloff=0
-set mouse=a
-set fileencodings=ucs-bom,utf-8,gbk,big5,gb18030,latin1
+set termguicolors
 
 set background=dark
 colo gruvbox
