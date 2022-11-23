@@ -72,4 +72,5 @@
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.quickOpen"
   ],
+  "window.restoreWindows": "none",
 }
