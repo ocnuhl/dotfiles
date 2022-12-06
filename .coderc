@@ -61,6 +61,7 @@
     "<C-w>": false,
   },
   "editor.codeLens": false,
+  "extensions.ignoreRecommendations": true,
   "files.insertFinalNewline": true,
   "files.exclude": {
     "**/build": true
@@ -68,7 +69,7 @@
   "files.watcherExclude": {
     "**/build/**": true
   },
-  "extensions.ignoreRecommendations": true,
+  "git.autoRepositoryDetection": false,
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.quickOpen"
   ],
