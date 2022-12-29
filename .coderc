@@ -53,6 +53,14 @@
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
     },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    },
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
