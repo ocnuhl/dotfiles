@@ -1,0 +1,8 @@
+set completion-ignore-case on
+set editing-mode vi
+set keyseq-timeout 0
+
+"\C-l": clear-screen
+"\C-n": next-history
+"\C-p": previous-history
+"\e.": yank-last-arg
