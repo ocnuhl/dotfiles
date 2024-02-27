@@ -1,6 +1,5 @@
 PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin"
-PS1="\[\e[1;32m\][\u:\w]\$\[\e[m\] "
-[ -n "$SSH_TTY" ] && PS1="\[\e[1;34m\][\u:\w]$\[\e[m\] "
+PS1='\[\e[1;32m\][${http_proxy:-DIRECT}][\w]\$\[\e[m\] '
 HISTCONTROL=ignoreboth:erasedups
 export VISUAL=vim
 
@@ -20,7 +19,7 @@ alias du="du -sh"
 alias envg="env |grep -i"
 alias free="free -h"
 alias grep="grep --color=auto"
-alias psg="ps -ef |grep -i"
+alias psg="ps aux |grep -i"
 alias sst="ss -tpln"
 
 alias ga="git add"
@@ -41,20 +40,16 @@ alias gsh="git show"
 alias gsm="git submodule"
 alias gst="git status"
 
-getproxy() {
-    echo "http_proxy=$http_proxy"
-    echo "https_proxy=$https_proxy"
-}
-
 setproxy() {
     if [ -z "$1" ]; then
         unset http{,s}_proxy
+    elif [ "1" = "$1" ]; then
+        export http{,s}_proxy=socks5h://me:1080
     elif [ "8" = "$1" ]; then
-        export http{,s}_proxy=http://127.0.0.1:8888
+        export http{,s}_proxy=me:3128
     elif [ "9" = "$1" ]; then
-        export http{,s}_proxy=http://127.0.0.1:8889
+        export http{,s}_proxy=me:3129
     else
         export http{,s}_proxy="$1"
     fi
-    getproxy
 }
