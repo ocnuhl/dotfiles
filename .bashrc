@@ -43,8 +43,6 @@ alias gst="git status"
 setproxy() {
     if [ -z "$1" ]; then
         unset http{,s}_proxy
-    elif [ "1" = "$1" ]; then
-        export http{,s}_proxy=socks5h://me:1080
     elif [ "8" = "$1" ]; then
         export http{,s}_proxy=me:3128
     elif [ "9" = "$1" ]; then
