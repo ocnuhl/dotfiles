@@ -23,7 +23,6 @@ set hidden
 set hlsearch
 set ignorecase
 set incsearch
-set mouse=a
 set noswapfile
 set scrolloff=0
 set shiftwidth=4
