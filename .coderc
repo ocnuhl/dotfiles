@@ -83,4 +83,5 @@
     "-workbench.action.quickOpen"
   ],
   "window.restoreWindows": "none",
+  "C_Cpp.intelliSenseCacheSize": 0,
 }
