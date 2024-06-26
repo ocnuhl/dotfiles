@@ -19,6 +19,7 @@ alias du="du -sh"
 alias envg="env |grep -i"
 alias free="free -h"
 alias grep="grep --color=auto"
+alias ip="ip -c=auto"
 alias psg="ps aux |grep -i"
 alias sst="ss -tpln"
 
