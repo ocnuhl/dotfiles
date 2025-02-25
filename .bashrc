@@ -46,10 +46,10 @@ setproxy() {
     if [ -z "$1" ]; then
         unset http{,s}_proxy
     elif [ "8" = "$1" ]; then
-        export http{,s}_proxy=me:3128
+        export http{,s}_proxy=http://me:3128
     elif [ "9" = "$1" ]; then
-        export http{,s}_proxy=me:3129
+        export http{,s}_proxy=http://me:3129
     else
-        export http{,s}_proxy="$1"
+        export http{,s}_proxy=http://"$1"
     fi
 }
